@@ -1,53 +1,52 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
-    <link rel="stylesheet" href="main.css">
-    <title>電卓</title>
-  </head>
+  <!DOCTYPE html>
+  <html lang="ja">
+    <head>
+      <meta charset="utf-8">
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+      <link rel="stylesheet" href="main.css">
+      <title>電卓</title>
+    </head>
 
-  <body>
+    <body>
+      <div id="container">
+        <div id="result"></div>
+        <table>
+          <tr>
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+            <td><button>9</button></td>
+            <td><button>+</button></td>
+          </tr>
+      
+          <tr>
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td><button>-</button></td>
+          </tr>
+      
+          <tr>
+            <td><button>1</button></td>
+            <td><button>2</button></td>
+            <td><button>3</button></td>
+            <td><button>*</button></td>
+          </tr>
+      
+          <tr>
+            <td><button>0</button></td>
+            <td><button>00</button></td>
+            <td><button>.</button></td>
+            <td><button>/</button></td>
+          </tr>
 
-    <table>
-      <tr>
-        <td colspan="4" class="screen"></td>
-      </tr>
-
-      <tr>
-        <td id="btn-7">7</td>
-        <td id="btn-8">8</td>
-        <td id="btn-9">9</td>
-        <td id="btn-plus" class="operator">+</td>
-      </tr>
-    
-      <tr>
-        <td id="btn-4">4</td>
-        <td id="btn-5">5</td>
-        <td id="btn-6">6</td>
-        <td id="btn-minus" class="operator">-</td>
-      </tr>
-    
-      <tr>
-        <td id="btn-1">1</td>
-        <td id="btn-2">2</td>
-        <td id="btn-3">3</td>
-        <td id="btn-multiply" class="operator">*</td>
-      </tr>
-    
-      <tr>
-        <td id="btn-0">0</td>
-        <td id="btn-00">00</td>
-        <td id="btn-dot">.</td>
-        <td id="btn-divide" class="operator">/</td>
-      </tr>
-
-      <tr>
-        <td id="btn-clear" colspan="2">AC</td>
-        <td id="btn-equal" colspan="2">=</td>
-      </tr>
-    </table>
-    
-    <script src="main.js"></script>
-  </body>
-</html>
+          <tr>
+            <td colspan="2"><button>AC</button></td>
+            <td colspan="2"><button>=</button></td>
+          </tr>
+        </table>
+      </div>
+      
+      
+      <script src="main.js"></script>
+    </body>
+  </html>
